@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+   html{
+    height: 100%;
+    width: 100%;
+   }
+  body{
+    background-image:linear-gradient(to bottom, #ffdd94e3, #ffdd94b7);
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+   
+      header{
+        display: flex;
+        background-color: #00ed00;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 15%;
+      }
+      .cnt-icon{
+        background-color: #1ab6b6;
+        justify-self: center;
+        align-self: center;
+        display: inline;
+        width: 33%;
+        height: 100%;
+      }
+      .browser{
+        margin: 1%  ;
+        background-color: #1ab6b6;
+        justify-content: center;
+        align-self: center;
+        display: inline;
+        width: 33%;
+        height: 100%;
+      }
+      .login{
+        background-color: #1ab6b6;
+        justify-content: center;
+        align-self: center;
+        display: inline;
+        width: 33%;
+        height: 100%;
+      }
+
+
+
+  .container{
+    background-color: transparent;
+    margin-top: 5%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .register-container{
+    max-width: 50%;
+    max-height: 80%;
+    display: flex;
+    width: 30%;
+    height: 80%;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+  }
+   
+  .register, .opcion{
+    flex: 1;
+  }
+   
+  .register{
+    padding: 40px;
+    position: relative;
+  }
+   
+  .register h2{
+    color: #797979;
+    margin-bottom: 30px;
+  }
+   
+  .register input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8;
+    color: #333;
+  }
+   
+  .register input:active,
+  .register input:focus{
+    outline: none;
+  }
+   
+  .register .submit{
+    width: auto;
+    padding: 10px;
+    background: #f17108;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+  }
+   
+  .home{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    right: -35px;
+    padding: 5px;
+    text-align: center;
+    font-size: 19px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
+    color: #7c7c7c;
+  }
+  .opcion-conteiner{
+    max-width: 50%;
+    max-height: 80%;
+    display: block;
+    width: 30%;
+    height: 80%;
+    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+   }
+  .opcion{
+
+    justify-items: center;
+    align-items: center;
+    padding: 15% 13% 15% 13%;
+  }
+   
+  .opcion h2{
+    color: #fff;
+    margin-bottom: 45px;
+  }
+   .nombre{
+    max-width: 40%;
+    margin: 3%;
+   }
+
+   .correo{
+    max-width: 40%;
+    margin: 3%;
+   }
+  .opcion button i{
+    position: absolute;
+    top: 12px; 
+    left: 12px;
+  }
+   
+  .opcion button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative;
+  }
+   
+  .opcion .fb{
+    background: #3b5999;
+    border-style: none;
+    color: #fff;
+  }
+   
+  .opcion .tw{
+    background: #55acef;
+    border-style: none;
+    color: #fff;
+  }
+   
+  .opcion .correo{
+    background: #33d4ce;
+    border-style: none;
+    color: #fff;
+  }

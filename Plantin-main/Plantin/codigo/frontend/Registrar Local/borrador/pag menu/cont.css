@@ -1,0 +1,149 @@
+/*Portada*/
+
+
+.block-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 80px;
+    background-image: url( http://drive.google.com/uc?export=view&id=1Nde3x78n6Qj0H88uxDaB3ZLgBdfYBoCi);/*imagen de fondo*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block-container:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+}
+
+.container-slogan{
+    max-width: 800px;
+    height: 320px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-slogan h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 10cm;
+}
+
+.container-slogan p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    box-shadow: #000000;
+}
+
+/*filtros de comienzo*/
+
+.cnt-filtros{
+    height: 500px;
+}
+
+.filtros-vida{
+    display: flex;
+    padding: 40px 0;
+justify-content: space-around;
+}
+
+.filtros-vida button{
+    width: 115%;
+    margin: auto;
+    font-size: 200%;
+    background: #07d400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.filtros-vida button:hover{
+    opacity: 0.9;
+}
+
+.star{
+    display: block;
+    padding: 0 42.5%;
+    justify-content: center;
+    height: 100%;
+}
+
+.star button{
+    width: 100%;
+    font-size: 40px;
+    background: #07d400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+.star button:hover{
+    opacity: 0.9;
+}
+
+
+/*sistema de filtrado*/
+
+[value="TODOS"]:checked ~ .posts .post[data-category]{
+    display: block;
+}
+
+[value="HTML"]:checked ~ .posts .post:not([data-category~="HTML"]),
+[value="CSS"]:checked ~ .posts .post:not([data-category~="CSS"]),
+[value="JS"]:checked ~ .posts .post:not([data-category~="JS"]),
+[value="PHP"]:checked ~ .posts .post:not([data-category~="PHP"]),
+[value="NODEJS"]:checked ~ .posts .post:not([data-category~="NODEJS"]),
+[value="VUE"]:checked ~ .posts .post:not([data-category~="VUE"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="HTML"]:checked ~ .container-category [for="HTML"],
+[value="CSS"]:checked ~ .container-category [for="CSS"],
+[value="JS"]:checked ~ .container-category [for="JS"],
+[value="PHP"]:checked ~ .container-category [for="PHP"],
+[value="NODEJS"]:checked ~ .container-category [for="NODEJS"],
+[value="VUE"]:checked ~ .container-category [for="VUE"]{
+    background: #07d400;
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px){
+    .posts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px){
+    .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
